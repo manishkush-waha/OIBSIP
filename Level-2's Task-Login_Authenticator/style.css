@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-register-container {
+    display: flex;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #78c465;
+    box-shadow: 0 0 15px 5px #000000;
+}
+
+.toggle-container {
+  display: flex;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-evenly;
+}
+
+.toggle-container h2 {
+  width: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-container #first-heading {
+  border-radius: 20px 0 0 0;
+}
+
+.toggle-container #second-heading {
+  border-radius: 0 20px 0 0;
+  background-color: #ffffff;
+}
+
+.login-register-form {
+  display: flex;
+  padding: 15px 10px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.login-register-form #login-form {
+  gap: 10px;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.login-register-form #register-form {
+  gap: 10px;
+  width: 90%;
+  display: none;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-register-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  gap: 5px;
+  display: flex;
+  text-align: left;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+label {
+  color: #414141;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.button button{
+  border: none;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #4caf50;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+}
+
+.main-container header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background-color: #45a049;
+}
+
+.main-container section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.main-container footer {
+  display: flex;
+  justify-content: center;
+align-items: center;
+  padding: 100px;
+  background-color: #747474;
+}

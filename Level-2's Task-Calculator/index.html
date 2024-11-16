@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="history" id="show-history">History <p id="history" onclick="changeValue()"></p></div>
+        <input type="text" id="expression" disabled/>
+        <div id="result">0</div>
+      </div>
+      <div class="buttons-container">
+        <div class="first-row">
+          <button onclick="appendToExpression('(')">(</button>
+          <button onclick="appendToExpression(')')">)</button>
+          <button onclick="getAnswer()">Ans</button>
+          <button onclick="deleteLast()">Del</button>
+          <button onclick="clearDisplay()">Clear</button>
+        </div>
+
+        <div class="second-row">
+          <button onclick="appendToExpression('7')" class="numbers">7</button>
+          <button onclick="appendToExpression('8')" class="numbers">8</button>
+          <button onclick="appendToExpression('9')" class="numbers">9</button>
+          <button onclick="appendToExpression('%')">%</button>
+          <button onclick="appendToExpression('√')">√</button>
+        </div>
+
+        <div class="third-row">
+          <button onclick="appendToExpression('4')" class="numbers">4</button>
+          <button onclick="appendToExpression('5')" class="numbers">5</button>
+          <button onclick="appendToExpression('6')" class="numbers">6</button>
+          <button onclick="appendToExpression('×')">×</button>
+          <button onclick="appendToExpression('÷')">÷</button>
+        </div>
+
+        <div class="forth-row">
+          <button onclick="appendToExpression('1')" class="numbers">1</button>
+          <button onclick="appendToExpression('2')" class="numbers">2</button>
+          <button onclick="appendToExpression('3')" class="numbers">3</button>
+          <button onclick="appendToExpression('+')">+</button>
+          <button onclick="appendToExpression('-')">-</button>
+        </div>
+
+        <div class="fifth-row">
+          <button onclick="appendToExpression('.')">.</button>
+          <button onclick="appendToExpression('0')" class="numbers">0</button>
+          <button></button>
+          <button class="enter" onclick="calculateResult()">ENTER</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

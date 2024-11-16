@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Authenticator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-register-container" id="login-register-container">
+      <div class="toggle-container">
+        <h2 id="first-heading" onclick="ToggleForm('login')">LOGIN</h2>
+        <h2 id="second-heading" onclick="ToggleForm('register')">REGISTER</h2>
+      </div>
+      <div class="login-register-form">
+        <form id="login-form">
+            <h2>Login</h2>
+          <div class="input-group">
+            <label for="login-username">Username</label>
+            <input
+              type="text"
+              id="login-username"
+              placeholder="Enter username"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="login-password">Password</label>
+            <input
+              type="text"
+              id="login-password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <div class="button">
+            <button type="submit" onclick="userLogin()">Login</button>
+          </div>
+          <p style="color: #292b29;">If You Haven't Account. Go To <span style="color: #78c465; cursor: pointer;" onclick="ToggleForm('register')">Register</span></p>
+        </form>
+        <form id="register-form">
+            <h2>Register</h2>
+            <div class="input-group">
+                <label for="register-name">Full Name</label>
+                <input type="text" id="register-name" placeholder="Enter name" required>
+            </div>
+          <div class="input-group">
+            <label for="register-username">Username</label>
+            <input
+              type="text"
+              id="register-username"
+              placeholder="Enter username"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="register-password">Password</label>
+            <input
+              type="text"
+              id="register-password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="register-again-password">Again Password</label>
+            <input
+              type="text"
+              id="register-again-password"
+              placeholder="Enter again password"
+              required
+            />
+          </div>
+          <div class="button">
+            <button type="submit" onclick="userRegister()">Register</button>
+          </div>
+          <p>If You Have Already Account. Go To <span style="color: #78c465; cursor: pointer;" onclick="ToggleForm('login')">Login</span></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="main-container" id="main-container-id">
+      <header>
+        <h1>This is Header Of Website For Demo</h1>
+      </header>
+      <section>
+        <h1>This Is Section Of Content For Demo</h1>
+      </section>
+      <footer>
+        <h1>This Is Footer Of Website For Demo</h1>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

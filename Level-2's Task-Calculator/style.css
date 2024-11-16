@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(calculator_background.jpg);
+  }
+  
+  .calculator {
+    background-color: #e6f2ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+  }
+
+  .history {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    color: #1a1a1a;
+    text-align: right;
+    border-radius: 5px;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .display {
+    background-color: #81c0ff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  #expression {
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 1.2em;
+    color: #1a1a1a;
+    text-align: right;
+  }
+  
+  #result {
+    font-size: 1.5em;
+    color: #1a1a1a;
+    text-align: right;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .first-row, .second-row, .third-row, .forth-row, .fifth-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .first-row button, .second-row button, .third-row button, .forth-row button {
+    width: 18%;
+    height: 60px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4583ff;
+  }
+  
+  
+  .fifth-row button {
+    width: 18%;
+    height: 60px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: #4583ff;
+  }
+  
+  .fifth-row .enter {
+    width: 40%;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: #ff3cde;
+  }
+
+  .numbers {
+    background-color: #6b86ff !important;
+  }
+
+  button:hover {
+    background-color: #609fff;
+  }

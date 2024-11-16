@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do Web</title>
+  </head>
+  <body>
+    <div style="display: flex; margin: 0 auto">
+      <div class="form-field">
+        <h2>Add Your Work</h2>
+        <div class="second-row">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            placeholder="Title Of Your Work..."
+            id="second-input"
+            required
+          />
+        </div>
+        <div class="third-row">
+          <label for="description">Discription</label>
+          <textarea
+            placeholder="Discription Of Your Work..."
+            id="third-input"
+            required
+          ></textarea>
+        </div>
+        <div class="forth-row">
+          <button onclick="submit()">Add</button>
+        </div>
+      </div>
+      <div class="Work">
+        <div id="pending-work"><h2>Pending Work</h2></div>
+        <div id="complete-work"><h2>Completed Work</h2></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
