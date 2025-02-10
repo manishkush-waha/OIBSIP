@@ -20,7 +20,7 @@ function submit() {
 
   let createDiv = `<div class="created-div"><div class="workToDo"><h4 class="work-title">${title}</h4><p>${description}</p>${formattedDate}</div><div class="workToDo"><button onclick="complete_work(${incremet})" style="background-color: green; width: 130px;" class="my-button-${incremet}">Complete</button><button onclick="delete_work(${incremet})" style="background-color: red; width: 100px;">Delete</button></div></div>`;
 
-  if (title == "" || description == "") {
+  if (title == "" && description == "") {
     alert("Please Fill Title And Description.");
   } else {
     newDiv = document.createElement("div");
